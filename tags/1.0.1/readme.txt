@@ -4,7 +4,7 @@ Tags: profile, biography, bio, rich, text, editor, wysiwyg, tinymce, wpeditor, v
 Requires at least: 3.3
 Tested up to: 6.0.0
 Requires PHP: 5.3
-Stable tag: 1.1.1
+Stable tag: 1.1.0
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,11 +39,8 @@ Source: https://github.com/Kevinlearynet/Visual-Biography-Editor
 
 == Changelog ==
 
-= 1.1.1 =
-* Update readme.txt
-
-= 1.1.0 =
-* Bumped the “Tested up to” tag to WP 6.0
+= 1.0.1 =
+* Bumped the “Tested up to” tag to WP 6.0.
 
 = 1.0.0 =
 * Initial release
@@ -56,9 +53,9 @@ By default, the visual editor is available to current user with 'edit_post' capa
 
 You can change this by hooking into the 'vude_can_use_visual_editor' filter.
 
-`
+```
 add_filter( 'vude_use_visual_editor', 'my_custom_use_visual_editor' );
 function my_custom_use_visual_editor( $use_visual_editor) {
     return current_user_can( 'edit_others_pages' )
 }
-`
+```
