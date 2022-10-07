@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var id = 'description';
+  const id = 'description';
   document.getElementById(id).style.width = '100%';
 
   wp.editor.initialize(id, {

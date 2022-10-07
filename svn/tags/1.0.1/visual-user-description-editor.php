@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Visual User Description Editor
  * Description:       Replaces the user "Biographical Info" profile field with a TinyMCE visual editor.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 3.3
  * Requires PHP:      5.3
  * Author:            Kevin Leary, zwwuu
@@ -90,7 +90,7 @@ if ( ! class_exists( 'VUDE' ) ) {
 			wp_enqueue_media();
 			wp_enqueue_script(
 				'visual-user-description-editor',
-				plugins_url( 'js/enable-visual-editor.js', __FILE__ )
+				plugins_url( 'js/index.js', __FILE__ )
 			);
 		}
 
