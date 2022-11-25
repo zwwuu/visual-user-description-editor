@@ -90,7 +90,7 @@ if ( ! class_exists( 'VUDE' ) ) {
 			wp_enqueue_media();
 			wp_enqueue_script(
 				'visual-user-description-editor',
-				plugins_url( 'js/index.js', __FILE__ )
+				plugins_url( 'js/enable-visual-editor.js', __FILE__ )
 			);
 		}
 

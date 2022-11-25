@@ -2,7 +2,7 @@
 Contributors: kevinlearynet, zwwuu
 Tags: profile, biography, bio, rich, text, editor, wysiwyg, tinymce, wpeditor, visual, editor, biographic, info, description, profile biography, profile description, rich text, TinyMCE, user, user profile, users, author
 Requires at least: 3.3
-Tested up to: 6.0.0
+Tested up to: 6.1.0
 Requires PHP: 5.3
 Stable tag: {{version}}
 License: GPL v2 or later
@@ -37,17 +37,6 @@ Source: https://github.com/Kevinlearynet/Visual-Biography-Editor
 1. Editing a user profile using the visual editor
 2. Viewing a user archive page with the formatted description
 
-== Changelog ==
-
-= 1.1.1 =
-* Update readme.txt
-
-= 1.1.0 =
-* Bumped the “Tested up to” tag to WP 6.0
-
-= 1.0.0 =
-* Initial release
-
 == Frequently Asked Questions ==
 
 = How to change who can use visual editor? =
@@ -62,3 +51,17 @@ function my_custom_use_visual_editor( $use_visual_editor) {
     return current_user_can( 'edit_others_pages' )
 }
 `
+
+== Changelog ==
+
+= 1.2.0 =
+* Bumped the “Tested up to” tag to WP 6.1
+
+= 1.1.1 =
+* Update readme.txt
+
+= 1.1.0 =
+* Bumped the “Tested up to” tag to WP 6.0
+
+= 1.0.0 =
+* Initial release
