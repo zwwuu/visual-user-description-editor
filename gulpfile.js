@@ -5,25 +5,14 @@ const replace = require('gulp-replace');
 const {version} = require('./package.json');
 const exec = require('child_process').exec;
 
-function clean(cb) {
-  rimraf('dist/', {}, function(err) {
-    cb(err);
-  });
-  rimraf('build/', {}, function(err) {
-    cb(err);
-  });
-  rimraf('tmp/', {}, function(err) {
-    cb(err);
-  });
-  rimraf('svn/trunk', {}, function(err) {
-    cb(err);
-  });
+async function clean(cb) {
+  await rimraf(['dist/', 'build/', 'tmp/', 'svn/trunk']);
+  cb();
 }
 
-function cleanUp(cb) {
-  rimraf('tmp/', {}, function(err) {
-    cb(err);
-  });
+async function cleanUp(cb) {
+  await rimraf('tmp/',)
+  cb();
 }
 
 function copyToTrunk() {
